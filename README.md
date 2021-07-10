@@ -8,19 +8,19 @@ The following diagram shows the ER diagram for all Data.<br/>
 ![ER diagram]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram1.JPG)<br/><br/>
 
 ##Q2.Write a query<br/>
-###1.What are the top 5 brands by receipts scanned for most recent month?<br/>
-###2.How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?<br>
+<b>1.What are the top 5 brands by receipts scanned for most recent month?<br/></b>
+<b>2.How does the ranking of the top 5 brands by receipts scanned for the recent month compare to the ranking for the previous month?<br></b>
 The above two query cannot be solved as Brand and receipts data are not connected with each other.<br/>
-###3. When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?<br/>
+<b>3. When considering average spend from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?<br/></b>
 In this rewardsReceiptStatus does not have any values as ACCEPTED, So I consider it for REJECTED and FINISHED. I use the following sql code:<br>
 SELECT rewardsReceiptStatus,AVG(totalSpent) <br/>
 from receipts <br/>
-group by rewardsReceiptStatus <br/>  
+group by rewardsReceiptStatus  
 HAVING rewardsReceiptStatus = 'REJECTED' OR rewardsReceiptStatus = 'FINISHED'<br/>
 ORDER BY AVG(totalSpent) desc<br/>
 LIMIT 1<br/>
 The following the oupput for the above query:<br/>
-![SQL Query]()
+![SQL Query]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram2.JPG)
 
 
 
