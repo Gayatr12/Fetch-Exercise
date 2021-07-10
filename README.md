@@ -20,7 +20,7 @@ HAVING rewardsReceiptStatus = 'REJECTED' OR rewardsReceiptStatus = 'FINISHED'<br
 ORDER BY AVG(totalSpent) desc<br/>
 LIMIT 1<br/>
 The following is the output for the above query:<br/></b>
-![SQL Query]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram2.JPG)
+![SQL Query]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram2.JPG )
 <b>4. When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?<br/></b>
 -> In this rewardsReceiptStatus does not have any values as ACCEPTED, So I consider it for REJECTED and FINISHED. I use the following sql code:<br/>
 <b>SELECT rewardsReceiptStatus, SUM(purchasedItemCount)<br/> 
@@ -30,7 +30,7 @@ HAVING rewardsReceiptStatus = 'REJECTED' OR rewardsReceiptStatus = 'FINISHED'<br
 ORDER BY SUM(purchasedItemCount) desc<br/>
 LIMIT 1<br/></b>
 The following is the output for the above query:<br/></b>
-![SQL Query]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram3.JPG)
+![SQL Query]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram3.JPG )
 <b>5.Which brand has the most spend among users who were created within the past 6 months?<br/>
 Which brand has the most transactions among users who were created within the past 6 months?<br/></b>
 -> The above two query cannot be solved as Brand and Users data are not connected with each other.<br/>
