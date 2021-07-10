@@ -19,7 +19,7 @@ group by rewardsReceiptStatus
 HAVING rewardsReceiptStatus = 'REJECTED' OR rewardsReceiptStatus = 'FINISHED'<br/>
 ORDER BY AVG(totalSpent) desc<br/>
 LIMIT 1<br/>
-The following is the output for the above query:<br/></b>
+The following is the output for the above query1:<br/></b>
 ![SQL Query]( https://github.com/Gayatr12/Fetch-Exercise/blob/master/Diagram2.JPG )
 <b>4. When considering total number of items purchased from receipts with 'rewardsReceiptStatus’ of ‘Accepted’ or ‘Rejected’, which is greater?<br/></b>
 -> In this rewardsReceiptStatus does not have any values as ACCEPTED, So I consider it for REJECTED and FINISHED. I use the following sql code:<br/>
