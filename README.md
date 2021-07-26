@@ -65,7 +65,7 @@ Hope to hear from you soon.<br/><br/>
 Regards,<br/>
 Gayatri<br/>
 
-<b>2,3,4,5. <b/> <br/>
+<b>2,3,4,5. </b> <br/>
 Hello,
 I am happy to answer your all questions.<br/>
 2. There are Different Data Quality issues some of them are as follow: Missing values or Null values in data, Duplicated Data, Inconsistent formats, Incorrect Data etc <br/>
